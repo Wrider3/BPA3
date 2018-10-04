@@ -1,0 +1,155 @@
+body {
+  background-color: gray;
+  margin: 0px;
+}
+
+.hero_image {
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.cardbox {
+  display: grid;
+  grid-gap: 20px;
+  margin: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  border-radius: 10px;
+  grid-gap: 5px;
+  background-color: white;
+  box-shadow:  0px 7px #547485;
+}
+
+.card_img {
+  grid-column: 1;
+  grid-row: 1/5;
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.card_title {
+  display: flex;
+  align-self: flex-start;
+  grid-column: 2/4;
+  grid-row: 1;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.ticket_button {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 40px;
+  background-color: #00a1e6;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: .8em;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ticket_button:hover {
+  box-shadow:  0px 4px #2b6688;
+  }
+
+.map_button {
+  display: flex;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  height: 40px;
+  background-color: #00a1e6;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  margin-right: 5px;
+  font-size: .8em;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.map_button:hover {
+  box-shadow:  0px 4px #2b6688;
+  }
+
+
+.details_button {
+  display: flex;
+  grid-column: 2/4;
+  grid-row: 3;
+  height: 40px;
+  background-color: #00a1e6;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  margin-right: 5px;
+  font-size: .8em;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.details_button:hover {
+  box-shadow:  0px 4px #2b6688;
+}
+
+.card_text {
+  grid-column: 2/4;
+  grid-row: 4;
+  font-family: 'Roboto Slab', serif;
+  font-size: .8em;
+}
+
+.nav-icon {
+   stroke:rgb(0,0,0);
+   stroke-width:3;
+   position: absolute;
+   top: .70em;
+   right: .95em;
+}
+
+.navbox-class {
+  display: none;
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  background-color: #595959;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.nav-icon circle {
+  fill: #333333;
+  stroke: none;
+}
+
+.nav-icon line {
+  stroke-linecap: round;
+}
+
+
+
+
+/*this media query is created to rearrange desktop layout*/
+@media only screen and (min-width: 768px) {
+  .cardbox {
+      display: grid;
+      grid-gap: 20px;
+      margin: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+  }
